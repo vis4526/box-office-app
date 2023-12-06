@@ -1,10 +1,10 @@
-
+import { SearchCard } from "../common/SearchCard";
 
 const ActorCard = ({ name,image,gender,country,birthday,deathday }) => {
  
 
   return (
-    <div>
+    <SearchCard>
       <div>
         <img src={image} alt={name} />
       </div>
@@ -16,7 +16,7 @@ const ActorCard = ({ name,image,gender,country,birthday,deathday }) => {
       <p>{deathday ? `Died ${deathday}` : 'Alive'}</p>
 
       
-      </div>
+      </SearchCard>
     
   );
 };

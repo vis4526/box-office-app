@@ -31,7 +31,7 @@ const Home = () => {
       return <TextCenter>Error occured: {apiDataError.message}</TextCenter>;
     }
     if(apiData?.length === 0){
-      return <TextCenter>No results</TextCenter>
+      return <TextCenter>No results</TextCenter>;
     }
     if (apiData) {
       return apiData[0].show ? ( <ShowGrid shows ={apiData}/> ):( <ActorsGrid actors={apiData} />);
